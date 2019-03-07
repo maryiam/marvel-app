@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  background: var(--navbar-background-color);
+  margin-bottom: 30px;
+  z-index: 10;
+}
+
+.marvel-logo {
+  height: 10vmin;
+  pointer-events: none;
+}

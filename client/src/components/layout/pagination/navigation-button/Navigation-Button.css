@@ -1,0 +1,29 @@
+.link {
+  color: var(--link-color);
+  float: left;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid var(--pagination-background-color);
+  background-color: var(--pagination-background-color);
+  cursor: pointer;
+  min-height: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link.disabled {
+  cursor: not-allowed;
+}
+
+.link:hover:not(.uninteractive):not(.disabled) {
+  background-color: var(--link-color);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.pagination .uninteractive {
+  cursor: default;
+  padding: 8px 16px;
+}

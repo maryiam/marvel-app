@@ -1,0 +1,53 @@
+{
+  "name": "marvel-app-client",
+  "version": "1.0.0",
+  "description": "Smartrenting interview technical test",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.9",
+    "@types/node": "11.10.4",
+    "@types/react": "16.8.6",
+    "@types/react-dom": "16.8.2",
+    "http-proxy-middleware": "^0.19.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "typescript": "3.3.3333"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/**/__mocks__/*",
+      "!src/index.tsx"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && node server.js",
+    "test": "react-scripts test --coverage",
+    "eject": "react-scripts eject",
+    "lint": "tslint 'src/**/*.{ts, tsx}' -e '**/__mocks__/**'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/enzyme": "^3.9.0",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "express": "^4.16.4",
+    "prettier": "^1.16.4",
+    "react-test-renderer": "^16.8.3",
+    "tslint": "^5.13.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0"
+  },
+  "proxy": "http://server:8080"
+}

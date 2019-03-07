@@ -1,0 +1,10 @@
+.page-input {
+  width: 2.5vw;
+  border-radius: 2px;
+  border: none;
+  padding: 3px;
+  margin: 0 3px;
+  font-size: 14px;
+  text-align: center;
+  background: var(--input-background);
+}
